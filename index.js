@@ -7,10 +7,11 @@ const getTimestamp = require("./lib/getTimestamp");
 const getNodeId = require("./lib/getNodeId");
 const getSequenceId = require("./lib/getSequenceId");
 const { EPOCH_BITS, NODE_ID_BITS } = require("./lib/constants");
+const nodeId = getNodeId();
 
 function dsuid(namespace = "default") {
   let id = BigInt(getTimestamp()) << BigInt(64 - EPOCH_BITS);
-  id = id | (BigInt(getNodeId()) << BigInt(64 - EPOCH_BITS - NODE_ID_BITS));
+  id = id | (BigInt(nodeId) << BigInt(64 - EPOCH_BITS - NODE_ID_BITS));
   id = id | BigInt(getSequenceId(namespace));
   return id.toString();
 }
