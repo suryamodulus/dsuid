@@ -34,4 +34,8 @@ function getMAC(iface = "") {
   throw new Error("failed to get the MAC address");
 }
 
-module.exports = getMAC;
+function isMAC(macAddress) {
+  return macRegex.test(macAddress);
+}
+
+module.exports = { getMAC, isMAC };
