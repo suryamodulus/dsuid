@@ -1,4 +1,7 @@
-### DSUID - Distributed Sortable Unqiue Identifiers :eight_spoked_asterisk:
+### DSUID - Distributed Sortable Unqiue Identifiers :eight_spoked_asterisk: [![npm][npm-image]][npm-url]
+
+[npm-image]: https://img.shields.io/npm/v/dsuid.svg
+[npm-url]: https://npmjs.org/package/dsuid
 
 ##### USAGE
 ```

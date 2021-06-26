@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "Surya T",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/suryamodulus/dsuid.git"
+  },
   "dependencies": {}
 }
